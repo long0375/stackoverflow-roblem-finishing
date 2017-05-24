@@ -185,7 +185,11 @@ console.log(arr2); --> []
 ```
 **4. while 循环**
 ```
-while(A.length > 0) {
-    A.pop();
+var arr = [1, 2, 3, 4];
+arr2 = arr;
+while(.length > 0) {
+    arr.pop();
 }
+console.log(arr);
+console.log(arr2);
 ```
