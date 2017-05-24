@@ -1,18 +1,19 @@
 # stackoverflow 前端热门问题汇总
 
-####1. 如何使用 JavaScript 重定向到另一个界面？
+#### 1. 如何使用 JavaScript 重定向到另一个界面？
 
 >[How to redirect to another webpage in JavaScript/jQuery?](https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage-in-javascript-jquery)
 > StackOverflow
 
 **如果模拟用户点击事件行为，请使用  `location.href`** 
 **如果要模拟HTTP重定向，请使用 `location.replace`** 
+
 ```
 location.href='http://www.gm-medicare.com';
 location.replace('http://www.gm-medicare.com');
 ```
 
-####2. JavaScript 如何判断字符串是否包含某些字符？
+#### 2. JavaScript 如何判断字符串是否包含某些字符？
 
 >[How to check whether a string contains a substring in JavaScript?](https://stackoverflow.com/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript)
 >StackOverflow
@@ -55,7 +56,7 @@ var string = 'foo',
     expr = '/oo/';
 string.match(expr);
 ```
-####3. jQuery 如何判断元素是否隐藏？
+#### 3. jQuery 如何判断元素是否隐藏？
 
 > [How do I check if an element is hidden in jQuery?](https://stackoverflow.com/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery)
 > StackOverflow
@@ -68,17 +69,17 @@ $('#js-id').is(':hidden');
 ```
 $('#js-id:hidden');
 ```
-####4. function 声明 VS function 表达式？
+#### 4. function 声明 VS function 表达式？
 
 > [var functionName = function() {} vs function functionName() {}](https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname)
 > StackOverflow
 
-####5. JavaScript 使用相等符号==还是进行比较？
+#### 5. JavaScript 使用相等符号==还是进行比较？
 
 > [Which equals operator (== vs ===) should be used in JavaScript comparisons?](https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons)
 > StackOverflow
 
-####6. JavaScript 如何使字符串首字母大写？
+#### 6. JavaScript 如何使字符串首字母大写？
 
 **1. js 实现**
 
@@ -96,7 +97,7 @@ p:first-letter{
 }
 ```
 
-####7. JavaScript 如何替换重复的字符？
+#### 7. JavaScript 如何替换重复的字符？
 
 > [How to replace all occurrences of a string in JavaScript?](https://stackoverflow.com/questions/1144783/how-to-replace-all-occurrences-of-a-string-in-javascript)
 > StackOverflow
@@ -114,7 +115,7 @@ function replaceAll(str, search, replacement) {
 	return str.split(search).join(replacement); 
 }
 ```
-####8. 如何异步上传文件？
+#### 8. 如何异步上传文件？
 
 > [How can I upload files asynchronously?](https://stackoverflow.com/questions/166221/how-can-i-upload-files-asynchronously)
 > StackOverflow
@@ -124,7 +125,7 @@ function replaceAll(str, search, replacement) {
 > [How do I loop through or enumerate a JavaScript object?](https://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object)
 > StackOverflow
 
-**1. for in**`强制使用hasOwnProperty方法过滤来自原型对应的属性和方法，否则会带来性能问题`
+** 1. for in**`强制使用hasOwnProperty方法过滤来自原型对应的属性和方法，否则会带来性能问题`
 ```
 var key,
     obj = {
@@ -153,7 +154,7 @@ for( key in obj ) {
 // or 
 'undefined' === typeof obj.prop;
 ```
-####11. JavaScript 如何清空数组？
+#### 11. JavaScript 如何清空数组？
 
 > [How do I empty an array in JavaScript?](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript?rq=1)
 >stackoverflow
