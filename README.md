@@ -120,12 +120,12 @@ function replaceAll(str, search, replacement) {
 > [How can I upload files asynchronously?](https://stackoverflow.com/questions/166221/how-can-i-upload-files-asynchronously)
 > StackOverflow
 
-####9. 如何循环或枚举 JavaScript 对象？
+#### 9. 如何循环或枚举 JavaScript 对象？
 
 > [How do I loop through or enumerate a JavaScript object?](https://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object)
 > StackOverflow
 
-** 1. for in**`强制使用hasOwnProperty方法过滤来自原型对应的属性和方法，否则会带来性能问题`
+**1.for in**`强制使用hasOwnProperty方法过滤来自原型对应的属性和方法，否则会带来性能问题`
 ```
 var key,
     obj = {
@@ -141,13 +141,13 @@ for( key in obj ) {
 	}
 }
 ```
-####10. 检测JavaScript对象的属性是否 undefined 的最佳实现方式？
+#### 10. 检测JavaScript对象的属性是否 undefined 的最佳实现方式？
 
 > [Detecting an undefined object property](https://stackoverflow.com/questions/27509/detecting-an-undefined-object-property)
 > StackOverflow
 
 
-**1. typeof**
+**1.typeof**
 
 ```
 'undefined' === typeof variable;
@@ -167,7 +167,7 @@ arr=[];
 console.log(arr); --> []
 console.log(arr2); --> [1, 2, 3, 4]
 ```
-**2. 设置数组长度**
+**2.设置数组长度**
 ```
 var arr = [1, 2, 3, 4];
 arr2 = arr;
