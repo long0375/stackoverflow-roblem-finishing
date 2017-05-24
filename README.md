@@ -193,3 +193,44 @@ while(.length > 0) {
 console.log(arr);
 console.log(arr2);
 ```
+####  12. 如何在数组的指定位置中插入一个新的值？
+
+> [How to insert an item into an array at a specific index?](https://stackoverflow.com/questions/586182/how-to-insert-an-item-into-an-array-at-a-specific-index)
+> StackOverflow
+
+**1. splice**
+```
+var arr = [];
+arr[0]  = 'Jani';
+arr[1]  = 'Hege';
+arr[2]  = 'Stale';
+arr[3]  = 'Kai Jim';
+arr[4]  = 'Borge';
+console.log( arr.join() );
+arr.splice( 2, 0, 'Lene') ;
+console.log( arr.join() );
+```
+####  13. 如何查看JavaScript  对象的长度？
+
+> [Length of a JavaScript object](https://stackoverflow.com/questions/5223/length-of-a-javascript-object)
+> StackOverflow
+
+**1. Object**
+```
+var myObject = new Object();
+myObject["firstname"] = "Gareth";
+myObject["lastname"] = "Simpson";
+myObject["age"] = 21;
+// 在 Object 上做方法扩展
+Object.size = function ( obj ){
+	var result = 0,
+		key;
+	for (key in obj) {
+		if(obj.hasOwnProperty(key)) {
+			result++;
+		}
+	 }
+	 return result;
+};
+console.log( Object.size(myObject) )；
+```
